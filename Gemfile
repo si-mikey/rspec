@@ -1,6 +1,5 @@
-source	:rubygems 
+source	'https://rubygems.org' 
 
 gem 'rspec'
 gem 'selenium-webdriver'
 gem 'page-object'
-gem 'ffi', '1.0.11'

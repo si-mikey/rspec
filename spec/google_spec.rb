@@ -1,8 +1,3 @@
-#!/usr/bin/env ruby
-
-require 'rspec'
-
-
 describe 'GeekyDroids logged out homepage' do
 
 	

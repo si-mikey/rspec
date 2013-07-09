@@ -1,10 +1,9 @@
-describe 'GeekyDroids logged out homepage' do
+describe 'Google logged out homepage' do
 
 	
 	it 'should load the homepage' do
 
-
-		expect(123).to eql 123	
+		@browser.navigate.to 'http://www.google.com'
 
 	end
 

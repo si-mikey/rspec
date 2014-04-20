@@ -1,9 +1,19 @@
 module Google
 
-	class MainPage
-		include PageObject
-		
-		page_url 'http://www.google.com'
+    class MainPage
+     
+      def initialize(wd)
+        @wd = wd
+      end
 
-	end
+      def load
+        @wd.navigate.to 'http://google.com/'
+      end
+ 
+      def search_bar(string)
+        @wd.find_element(:css, '#gbqfq').send_keys(string)
+      end
+
+    end
+  
 end
